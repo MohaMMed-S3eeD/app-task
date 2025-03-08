@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_tasks",
+  "info": {
+    "singularName": "user-task",
+    "pluralName": "user-tasks",
+    "displayName": "User_Task"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Username": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Password": {
+      "type": "password"
+    },
+    "tasks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::task.task",
+      "mappedBy": "user_task"
+    }
+  }
+}

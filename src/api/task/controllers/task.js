@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- *  author controller
+ * task controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::author.author');
+module.exports = createCoreController('api::task.task');
